@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:gray;
+    display:flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+
+.gridcontainer {
+    background-color: gray;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sketchgrid {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+}
