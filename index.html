@@ -9,9 +9,22 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="gridcontainer">
+    <div id="content">
         <h1>Etch-a-Sketch</h1>
-        <div class="sketchgrid"></div>
+        <div id="sketchgrid"></div>
+        <div id = "toolbar">
+            <div class="slidecontainer">
+                Grid Size
+                <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
+                <div class="slidervalue"></div>
+            </div>
+            <button class="eraserbutton">Eraser</button>
+            <button class="resetbutton">Reset</button>
+            <input class="colorpicker" type="color"  value="#4b4f58">
+        </div>
+        <footer id="footer">
+            Copyright © 2022 Sean M. 
+        </footer>
     </div>
 </body>
 </html>
