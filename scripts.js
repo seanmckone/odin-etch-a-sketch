@@ -13,12 +13,15 @@ let eraserDown = false;
 let gridOn = false;
 let paintColor = prevColor = colorPicker.value;
 let boxDimension = 800;
+let gridWidth = slider.value;
 sketchGrid.style.width = `${boxDimension}px`;
 sketchGrid.style.height = `${boxDimension}px`;
 toolbar.style.width = `${boxDimension}px`;
 
 sketchGrid.draggable = false;
 output.textContent = `${slider.value} x ${slider.value}`;
+
+newGrid();
 
 body.addEventListener('mousedown', ()=> {
     dopaint = true;
@@ -89,10 +92,6 @@ colorPicker.oninput = function() {
     eraserDown = false;
     eraserButton.style.backgroundColor = '#4b4f58';
 }
-
-
-gridWidth = 16;
-newGrid();
 
 slider.oninput = function() {
     output.textContent = `${slider.value} x ${slider.value}`;
